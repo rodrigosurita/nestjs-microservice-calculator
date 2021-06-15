@@ -8,10 +8,9 @@ const logger = new Logger('Main');
 
 // Create the microservice options object
 const microserviceOptions = {
-  transport: Transport.TCP,
+  transport: Transport.NATS,
   options: {
-    host: '127.0.0.1',
-    port: 8877
+    url: 'nats://localhost:4222',
   }
 };
 
